@@ -1,3 +1,8 @@
+class Time {
+	int hours;
+	int minutes;
+	int seconds;
+}
 class TimeSecs{
 	public static void main(String args[]){
 		Time time=new Time();
@@ -7,9 +12,4 @@ class TimeSecs{
 		int total=time.hours*60*60+time.minutes*60+time.seconds;
 		System.out.println("Total seconds: "+total);
 	}
-}
-class Time {
-	int hours;
-	int minutes;
-	int seconds;
 }
