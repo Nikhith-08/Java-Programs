@@ -12,4 +12,5 @@ class TimeSecs{
 		int total=time.hours*60*60+time.minutes*60+time.seconds;
 		System.out.println("Total seconds: "+total);
 	}
+
 }
