@@ -3,6 +3,7 @@ class Time {
 	int minutes;
 	int seconds;
 }
+
 class TimeSecs{
 	public static void main(String args[]){
 		Time time=new Time();
