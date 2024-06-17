@@ -1,3 +1,10 @@
+class MyRunnable implements Runnable {
+    public void run() {
+        for (int i = 0; i < 4; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+        }
+    }
+}
 public class MultiThread {
     public static void main(String[] args) {
         Thread thread1 = new Thread(new MyRunnable(), "Thread 1");
@@ -6,12 +13,5 @@ public class MultiThread {
         thread1.start();
         thread2.start();
         thread3.start();
-    }
-}
-class MyRunnable implements Runnable {
-    public void run() {
-        for (int i = 0; i < 4; i++) {
-            System.out.println(Thread.currentThread().getName() + ": " + i);
-        }
     }
 }
